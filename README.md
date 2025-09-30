@@ -16,40 +16,38 @@ React, TailwindCSS, Node.js, Express.js, MongoDB, bcrypt.js
 
 Welcome to TrackMyGrowth, a complete full-stack application designed to help users set, manage, and achieve their personal and professional goals. This project combines a modern, responsive frontend with a robust and secure backend API.
 
----
+***
 
 ## ✨ Key Features
 
-* **🔐 Secure User Authentication:** End-to-end user registration and login system using JWT for stateless, secure sessions.
-* **🎯 Full Goal Management:** A complete CRUD (Create, Read, Update, Delete) interface for managing goals.
+* **🔐 Secure User Authentication:** End-to-end user registration and login system using **JWT** for stateless, secure sessions.
+* **🎯 Full Goal Management:** A complete **CRUD** (Create, Read, Update, Delete) interface for managing goals.
 * **📊 Interactive Dashboard:** A central hub to view all goals and track progress at a glance.
 * **📈 Progress Visualization:** Modern charts and graphs to visually represent your journey and achievements over time.
 * **📱 Responsive Design:** A seamless user experience across all devices, from desktops to mobile phones.
 * **✅ RESTful API:** A well-structured and documented API to ensure clear communication between the client and server.
 
----
+***
 
 ## 🏗️ Architecture Overview
 
 This project follows a classic client-server model. The frontend is a single-page application (SPA) that communicates with a backend RESTful API. The API handles all business logic, data persistence, and user authentication.
 
+* **Frontend:** The user interface built with **React**. It makes HTTP requests to the backend API to fetch and manipulate data.
+* **Backend:** The server built with **Node.js** & **Express.js**. It exposes a REST API, connects to the database, and manages all core functionalities.
+* **Database:** A **MongoDB** database to persist all user and goal data.
 
+***
 
-* **Frontend:** The user interface built with `[e.g., React]`. It makes HTTP requests to the backend API to fetch and manipulate data.
-* **Backend:** The server built with `[e.g., Java & Spring Boot]`. It exposes a REST API, connects to the database, and manages all core functionalities.
-* **Database:** A `[e.g., MongoDB]` database to persist all user and goal data.
+### Backend Technology Stack
 
----
+* **Runtime:** **Node.js**
+* **Framework:** **Express.js**
+* **Database:** **MongoDB**
+* **Authentication:** **JSON Web Tokens (JWT)**
+* **Package Manager:** **npm**
 
-### Backend
-
-* **Language:** `[e.g., Java 11]`
-* **Framework:** `[e.g., Spring Boot]`
-* **Database:** `[e.g., MongoDB]`
-* **Authentication:** `[e.g., Spring Security with JWT]`
-* **Build Tool:** `[e.g., Maven]`
-
----
+***
 
 ## ⚙️ Local Development Setup
 
@@ -57,8 +55,7 @@ Follow these steps to get the entire application running on your local machine.
 
 ### Prerequisites
 
-* **Node.js & npm:** For running the frontend.
-* **JDK & Maven:** For running the backend.
+* **Node.js & npm:** For running both the frontend and backend.
 * **Git:** For cloning the repositories.
 * **MongoDB:** A running instance of the database.
 
@@ -74,11 +71,11 @@ Follow these steps to get the entire application running on your local machine.
 
 2.  **Set up and run the Backend:**
     * Navigate to the backend directory: `cd TrackMyGrowth-Backend`
-    * Configure your database and JWT secret in `src/main/resources/application.properties`.
+    * Create a `.env` file and configure your database connection string and JWT secret. You can use `.env.example` as a template.
     * Install dependencies and run the server (this will start on port `8080`):
         ```sh
-        mvn clean install
-        mvn spring-boot:run
+        npm install
+        npm start
         ```
     * **Keep this terminal window open.**
 
@@ -98,14 +95,14 @@ Follow these steps to get the entire application running on your local machine.
     * 🚀 Your frontend application is now running at **`http://localhost:3000`**.
     * 📡 Your backend API is running at **`http://localhost:8080`**.
 
----
+***
 
 ## 📖 API Documentation
 
-The backend includes interactive API documentation. Once the backend server is running, you can access the Swagger UI at:
+The backend includes interactive API documentation using Swagger. Once the backend server is running, you can access the Swagger UI at:
 **`http://localhost:8080/swagger-ui.html`**
 
----
+***
 
 ## 🤝 Contributing
 
@@ -117,14 +114,14 @@ Contributions are welcome! If you'd like to improve TrackMyGrowth, please follow
 4.  Push your changes to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a Pull Request.
 
----
+***
 
 ## 📄 License
 
 This project is licensed under the **MIT License**. See the `LICENSE` file in each repository for more details.
 
----
+***
 
 ## 📧 Contact
 
-Ajay Singh - `[ajaypatel808131@gmail.com]`
+Ajay Singh [ajaypatel808131@gmail.com]
